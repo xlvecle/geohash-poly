@@ -8,7 +8,7 @@ You can use it in kotlin/java/scala or any other jvm languages.
 ## Example
 java
 ```java
-List<String> result = GeohashPolyKt.geohashPoly(null, 7,"intersect",null);
+List<String> result = GeohashPolyKt.geohashPoly(yourPoly, 7,"center",null);
 ```
 
 kotlin
