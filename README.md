@@ -28,8 +28,8 @@ inner geohashes
 ## Options
 
 + precision: precision of geohash, default is 7 
-+ mode: ```{"center", "inside", "intersect"}``` mode of calculation, default is "center", it means the center of geohash bounding box within polygon   
-+ threshold: if you choose "intersect" mode, you can set threshold to control degree of intersection
++ mode: ```{"center", "inside", "intersect"}``` mode of calculation, default is "center", it means the center of geohash within polygon   
++ threshold: if you choose "intersect" mode, you can set threshold to control the degree of intersection
   
 ## 选项
 
