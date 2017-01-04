@@ -1,11 +1,17 @@
 # geohash-poly
 
 A tool written by kotlin for users who want to transform a GeoPolygon to a list of geohashes that cover it.
+You can use it in kotlin/java/scala or any other jvm languages. 
 
-帮助你获取地理多边形内所包含的geohash块。
+帮助你获取地理多边形内所包含的geohash块，支持JVM系语言，kotlin/java/scala。
 
 ## Example
+java
+```java
+List<String> result = GeohashPolyKt.geohashPoly(null, 7,"intersect",null);
+```
 
+kotlin
 ```kotlin
 val result = geohashPoly(polygon = yourPoly)
 ```
@@ -22,9 +28,11 @@ inner geohashes
 ## Options
 
 + precision: precision of geohash, default is 7 
-  `geohash精度，base32位数`
-+ mode: ```{"center", "inside", "intersect"}``` mode of calculation, default is "center", it means the center of geohash bounding box within polygon 
-  `计算包含geohash块的模式，默认是center，计算规则为geohash块中心点在多边形内`
-  
++ mode: ```{"center", "inside", "intersect"}``` mode of calculation, default is "center", it means the center of geohash bounding box within polygon   
 + threshold: if you choose "intersect" mode, you can set threshold to control degree of intersection
-  `如果你选择了'intersect'模式，那么可以提供一个阈值来用来控制geohash和多边形相交的程度`
+  
+## 选项
+
++ precision: `geohash精度，base32位数`
++ mode: `计算包含geohash块的模式，默认是center，计算规则为geohash块中心点在多边形内`
++ threshold: `如果你选择了'intersect'模式，那么可以提供一个阈值来用来控制geohash和多边形相交的程度`

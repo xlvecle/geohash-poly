@@ -1,6 +1,7 @@
 /**
  * Created by xingke on 2017/1/4.
  */
+package com.xlvecle
 
 import ch.hsr.geohash.BoundingBox
 import ch.hsr.geohash.GeoHash
@@ -23,7 +24,8 @@ fun BoundingBox.toJTSPolygon(): Polygon {
     val points = kotlin.arrayOf(Coordinate(this.minLat, this.maxLon),
             Coordinate(this.maxLat, this.maxLon),
             Coordinate(this.maxLat, this.minLon),
-            Coordinate(this.minLat, this.minLon))
+            Coordinate(this.minLat, this.minLon),
+            Coordinate(this.minLat, this.maxLon))
     val polygon = GeometryFactory().createPolygon(LinearRing(CoordinateArraySequence(points), GeometryFactory()), null)
 
     return polygon
