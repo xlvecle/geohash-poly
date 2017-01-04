@@ -21,6 +21,10 @@ inner geohashes
 
 ## Options
 
-+ precision: precision of geohash, default is 7
-+ mode: ```{"center", "inside", "intersect"}``` mode of inner, default is "center"
++ precision: precision of geohash, default is 7 
+  `geohash精度，base32位数`
++ mode: ```{"center", "inside", "intersect"}``` mode of calculation, default is "center", it means the center of geohash bounding box within polygon 
+  `计算包含geohash块的模式，默认是center，计算规则为geohash块中心点在多边形内`
+  
 + threshold: if you choose "intersect" mode, you can set threshold to control degree of intersection
+  `如果你选择了'intersect'模式，那么可以提供一个阈值来用来控制geohash和多边形相交的程度`
