@@ -1,9 +1,32 @@
 # geohash-poly
 
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.xlvecle/geohash-poly/badge.svg?style=plastic)](https://maven-badges.herokuapp.com/maven-central/com.xlvecle/geohash-poly)
+[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+
+
 A tool written by kotlin for users who want to transform a GeoPolygon to a list of geohashes that cover it.
 You can use it in kotlin/java/scala or any other jvm languages. 
 
 帮助你获取地理多边形内所包含的geohash块，支持JVM系语言，kotlin/java/scala。
+
+## Maven
+```xml
+<dependency>
+  <groupId>com.xlvecle</groupId>
+  <artifactId>geohash-poly</artifactId>
+  <version>1.0-SNAPSHOT</version>
+</dependency>
+```
+
+## SBT
+```
+libraryDependencies += "com.xlvecle" % "geohash-poly" % "1.0-SNAPSHOT"
+```
+
+## Gradle via JCenter
+```
+compile 'com.xlvecle:geohash-poly:1.0-SNAPSHOT'
+```
 
 ## Example
 java
