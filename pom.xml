@@ -12,7 +12,7 @@
 
     <groupId>com.xlvecle</groupId>
     <artifactId>geohash-poly</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>geohash-poly</name>
     <description>A tool written by kotlin for users who want to transform a GeoPolygon to a list of geohashes that cover it. </description>
     <url>https://github.com/xlvecle/geohash-poly</url>
