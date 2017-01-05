@@ -1,6 +1,3 @@
-/**
- * Created by xingke on 2017/1/4.
- */
 package com.xlvecle
 
 import ch.hsr.geohash.BoundingBox
