@@ -14,18 +14,18 @@ You can use it in kotlin/java/scala or any other jvm languages.
 <dependency>
   <groupId>com.xlvecle</groupId>
   <artifactId>geohash-poly</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.4</version>
 </dependency>
 ```
 
 ## SBT
 ```
-libraryDependencies += "com.xlvecle" % "geohash-poly" % "1.0.1"
+libraryDependencies += "com.xlvecle" % "geohash-poly" % "1.0.4"
 ```
 
 ## Gradle via JCenter
 ```
-compile 'com.xlvecle:geohash-poly:1.0.1'
+compile 'com.xlvecle:geohash-poly:1.0.4'
 ```
 
 ## Example
